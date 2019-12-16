@@ -1,8 +1,25 @@
 # Prerequisites
+.DS_Store
+*.swp
+*.*~
+.*~
+*~
 *.d
 
 # Object files
 *.o
+*.a
+.settings
+*doxygen*
+*.gcov
+*.gcno
+*.gcda
+*_tests
+*_cslim
+*a.out
+*.zip
+tmp
+pdfs
 *.ko
 *.obj
 *.elf
@@ -11,6 +28,15 @@
 *.ilk
 *.map
 *.exp
+gcov
+objs
+lib
+*_tests.txt
+gcov*.html
+ErrorLogs
+testResults
+.metadata
+Debug
 
 # Precompiled Headers
 *.gch
@@ -39,8 +65,20 @@
 # Debug files
 *.dSYM/
 *.su
+*.obj
+*.ncb
+*.opt
+*.plg
 *.idb
 *.pdb
+*.sou
+*.sdf
+*.lib
+*.log
+*.tlog
+*.cache
+*.user
+*.sublime-*
 
 # Kernel Module Compile Results
 *.mod*
