@@ -1,5 +1,5 @@
-#include "PhaseDelay.h"
 #include <stdint.h>
+#include "PhaseDelay.h"
 
 // This array stores the collected samples from the ADC
 uint16_t raw_samples[256]; // The values are from 0 to 4096

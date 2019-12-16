@@ -1,5 +1,5 @@
-#ifndef EXAMPLE_INCLUDED
-#define EXAMPLE_INCLUDED
+#ifndef PHASEDELAY_INCLUDED
+#define PHASEDELAY_INCLUDED
 
 float getPhaseDelayFromRawSamples(void);
 

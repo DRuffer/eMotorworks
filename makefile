@@ -24,6 +24,7 @@ endif
 # production code C and CPP files.
 #
 SRC_FILES += PhaseDelay-src/PhaseDelay.c
+SRC_FILES += Temperature-src/Temperature.c
 SRC_DIRS += PhaseDelay-platform
 
 # --- TEST_SRC_FILES and TEST_SRC_DIRS ---
@@ -55,6 +56,7 @@ CPPUTEST_USE_EXTENSIONS = Y
 INCLUDE_DIRS += $(CPPUTEST_HOME)/include
 INCLUDE_DIRS += $(CPPUTEST_HOME)/include/Platforms/Gcc
 INCLUDE_DIRS += PhaseDelay-include
+INCLUDE_DIRS += Temperature-include
 INCLUDE_DIRS += example-fff
 INCLUDE_DIRS += tests/exploding-fakes
 INCLUDE_DIRS += tests/fff
