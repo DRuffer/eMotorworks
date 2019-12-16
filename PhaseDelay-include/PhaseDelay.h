@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_INCLUDED
 #define EXAMPLE_INCLUDED
 
-int getPhaseDelayFromRawSamples(void);
+float getPhaseDelayFromRawSamples(void);
 
 #endif
 
