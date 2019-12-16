@@ -1,9 +1,19 @@
-#include "Example.h"
+#include "PhaseDelay.h"
+#include <stdint.h>
 
-// This file is here so that the starter project can create a library with it.
-// Delete it once your own production code is under test
+// This array stores the collected samples from the ADC
+uint16_t raw_samples[256]; // The values are from 0 to 4096
 
-int example(void)
-{
-	return 1;
+/*
+* This function processes the raw samples stored in raw_samples,
+* and recovers the phase delay (theta).
+*
+* When the function is called, we assume that raw_samples
+* already has the most up-to-date samples from the ADC.
+*/
+int getPhaseDelayFromRawSamples(void) {
+  int theta = 1; // TODO: Restore to returning a float
+
+ // TODO: Please implement this function
+ return theta; // theta is between 0 and 360
 }

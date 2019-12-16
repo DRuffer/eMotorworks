@@ -2,10 +2,10 @@
 
 extern "C"
 {
-#include "Example.h"
+#include "PhaseDelay.h"
 }
 
-TEST_GROUP(Example)
+TEST_GROUP(PhaseDelay)
 {
     void setup()
     {
@@ -16,8 +16,8 @@ TEST_GROUP(Example)
     }
 };
 
-TEST(Example, returns_1)
+TEST(PhaseDelay, returns_1)
 {
-    LONGS_EQUAL(1, example());
+    LONGS_EQUAL(1, getPhaseDelayFromRawSamples());
 }
 
