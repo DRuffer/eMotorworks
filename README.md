@@ -1,2 +1,2 @@
 # eMotorworks
-Pre-screen questions tested using "gcc -g -Wall x.c"
+Pre-screen questions tested using "gcc -g -Wall x.c -o x"

@@ -18,6 +18,6 @@ TEST_GROUP(PhaseDelay)
 
 TEST(PhaseDelay, returns_1)
 {
-    DOUBLES_EQUAL(1.0, getPhaseDelayFromRawSamples(), .01);
+    DOUBLES_EQUAL(360.0, getPhaseDelayFromRawSamples(), .1);
 }
 
