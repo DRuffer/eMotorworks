@@ -1,4 +1,5 @@
 #include "CppUTest/TestHarness.h"
+#include "CppUTestExt/MockSupport.h"
 
 extern "C"
 {
@@ -13,11 +14,20 @@ TEST_GROUP(Temperature)
 
     void teardown()
     {
+        mock().clear();
     }
 };
+
+void controlDevicesTest()
+{
+    mock().actualCall("controlDevicesTest");
+}
 
 TEST(Temperature, returns_1)
 {
     LONGS_EQUAL(1, getTemperatureFromRawSample());
+    mock().expectOneCall("controlDevicesTest");
+    controlDevicesTest();
+    mock().checkExpectations();
 }
 
