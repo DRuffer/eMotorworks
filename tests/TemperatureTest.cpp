@@ -21,11 +21,12 @@ TEST_GROUP(Temperature)
 void controlDevicesTest()
 {
     mock().actualCall("controlDevicesTest");
+    controlDevices();
 }
 
 TEST(Temperature, returns_1)
 {
-    LONGS_EQUAL(1, getTemperatureFromRawSample());
+    LONGS_EQUAL(4, getTemperatureFromRawSample());
     mock().expectOneCall("controlDevicesTest");
     controlDevicesTest();
     mock().checkExpectations();

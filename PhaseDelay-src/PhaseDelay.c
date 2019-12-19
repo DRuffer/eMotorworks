@@ -31,13 +31,13 @@ float getPhaseDelayFromRawSamples(void) {
     // 256 and 4096 divides can be done with shifts,
     // but I'd want to see timings on the target hardware
     theta = (((float)sum/256)/4096)*360;
-    printf("sum = %d, theta = %f", sum, theta);
+    printf("sum = %d, theta = %f\n", sum, theta);
 
     return theta; // theta is between 0 and 360
 }
 
 // enable for stand alone testing
-#if 0
+#if 1
 int main(int ac, char** av) {
   return (int)getPhaseDelayFromRawSamples();
 }
